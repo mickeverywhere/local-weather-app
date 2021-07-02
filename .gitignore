@@ -45,3 +45,5 @@ dist.tar.gz
 test_results
 .env
 node_modules
+
+.vercel

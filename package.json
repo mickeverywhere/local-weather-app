@@ -3,7 +3,7 @@
   "version": "11.0.0",
   "license": "MIT",
   "config": {
-    "imageRepo": "duluca/localcast-weather",
+    "imageRepo": "mickeverywhere/localcast-weather",
     "imageName": "localcast-weather",
     "imagePort": "8080",
     "internalContainerPort": "3000"
@@ -21,7 +21,7 @@
     "lint:fix": "run-s lint:ts:fix lint:tsc",
     "e2e": "ng e2e local-weather-app",
     "build:prod": "ng build --prod",
-    "predocker:build": "npm run build",
+    "predocker:build": "npm run build:prod && npm test -- --watch=false",
     "docker:build": "cross-conf-env docker image build . -t $npm_package_config_imageRepo:$npm_package_version",
     "postdocker:build": "npm run docker:tag",
     "docker:tag": " cross-conf-env docker image tag $npm_package_config_imageRepo:$npm_package_version $npm_package_config_imageRepo:latest",

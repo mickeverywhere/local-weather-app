@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  appId: '01ff1417eeb4a81b09ac68b15958d453',
+  appId: '69d1d19f37a3209802659edae0be975e',
   username: 'localcast',
   baseUrl: 'http://',
   geonamesApi: 'api',

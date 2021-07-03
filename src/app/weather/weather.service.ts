@@ -111,6 +111,6 @@ export class WeatherService implements IWeatherService {
   }
 
   private convertKelvinToFahrenheit(kelvin: number): number {
-    return (kelvin * 9) / 5 - 459.67
+    return (kelvin)// return (kelvin * 9) / 5 - 459.67
   }
 }
